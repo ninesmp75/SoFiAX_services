@@ -62,11 +62,8 @@ SoFiAX_services/web$ docker-compose -f local.yml logs
 
 ### Production
 
-To get this working in a production setting you will need to run `python manage.py migrate` and create a user for accessing the admin console. 
-
-
-Once you have successfully migrated and created the superuser, you can deploy the services in detached mode
+You will have to run migrations and create a superuser prior being able to access the services. Once you have completed preparations, you can deploy the services on a virtual machine with the following command
 
 ```
-docker-compose up -d
+docker-compose up -f remote.yml -d
 ```
