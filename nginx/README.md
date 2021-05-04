@@ -11,7 +11,7 @@ The steps are:
 1. Identify a certificate authority to use
 2. Purchase SSL certificate
 3. Domain ownership verification (multiple methods for doing this - we have used HTTP file authentication).
-4. Configure `nginx/default.conf` 
+4. Configure `nginx/default.conf` and copy over key and certificate in the `Dockerfile`.
 5. Redeploy services
 
 Here are some resources on how to do this

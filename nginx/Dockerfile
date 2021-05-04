@@ -9,5 +9,7 @@ RUN apt-get update && apt-get -y upgrade && \
     -subj "/C=AU/CN=localhost" \
     -keyout /etc/ssl/localhost.key  -out /etc/ssl/localhost.crt
 
+# TODO: copy over ssl-bundle.crt and private key
+
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 COPY ./ssl.conf /config/nginx/ssl.conf
